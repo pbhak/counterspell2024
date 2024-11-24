@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://c70t1o0es003f"]
+
+[ext_resource type="Texture2D" uid="uid://cgh8kehamhs86" path="res://imgs/torch_none.png" id="1_rqdy3"]
+[ext_resource type="Script" path="res://screens/torch.gd" id="1_schdi"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_db2sw"]
+radius = 4.03039
+height = 94.8828
+
+[node name="torch" type="Area2D"]
+script = ExtResource("1_schdi")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(3, -8.99999)
+scale = Vector2(0.289453, 0.149155)
+texture = ExtResource("1_rqdy3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-6, -9)
+rotation = 0.657989
+shape = SubResource("CapsuleShape2D_db2sw")
