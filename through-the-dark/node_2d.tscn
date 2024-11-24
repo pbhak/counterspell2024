@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxuwubuh6xpp5"]
+
+[ext_resource type="Texture2D" uid="uid://bkhvtahh7guau" path="res://bg.png" id="1_78x4f"]
+[ext_resource type="PackedScene" uid="uid://d1wmexxvoxw2l" path="res://mc.tscn" id="2_kc5jc"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 6.0
+offset_top = -4.0
+offset_right = 1157.0
+offset_bottom = 644.0
+texture = ExtResource("1_78x4f")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_kc5jc")]
+position = Vector2(-221, 288)
